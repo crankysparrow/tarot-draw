@@ -4,8 +4,9 @@
   "description": "",
   "main": "tarot-api/app.js",
   "scripts": {
-    "start": "cd tarot-api && npm install && npm start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node tarot-api/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd tarot-api && npm install && cd .. && cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC"
