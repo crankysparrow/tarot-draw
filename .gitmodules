@@ -1,0 +1,3 @@
+[submodule "tarot-api"]
+	path = tarot-api
+	url = https://github.com/crankysparrow/tarot-api.git
