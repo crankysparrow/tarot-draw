@@ -1,4 +1,4 @@
-const styles = {
+const styles = theme => ({
   basic: {
     textAlign: 'center'
   },
@@ -35,7 +35,15 @@ const styles = {
   explanation: {
     width: '400px',
     textAlign: 'left'
+  },
+  blurb: {
+    width: '80%',
+    margin: '0 auto',
+    marginTop: '2rem',
+    [theme.breakpoints.up('md')]: {
+      width: '60%'
+    }
   }
-}
+})
 
 export default styles;

@@ -1,0 +1,7 @@
+- [ ] Center icons on card
+- [X] Add keywords/meanings
+- [ ] Add reversed cards
+- [ ] Add colors for each suit
+- [ ] Add icons for Major Arcana
+- [ ] Add option of multiple cards
+- [ ] Hide meanings, let user choose when to display

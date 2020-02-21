@@ -8,6 +8,7 @@ import Paper from '@material-ui/core/Paper';
 import styles from './styles';
 import MinorIcons from './minoricons';
 import { Meaning, Desc } from './Descriptors';
+import Blurb from './Blurb';
 
 class App extends Component {
 
@@ -83,6 +84,7 @@ class App extends Component {
     const { classes } = this.props;
     return (
       <Container className={classes.basic}>
+        <Typography variant={'h2'} color={'secondary'}>Tarot Draw</Typography>
         <Grid container justify={'center'} spacing={2} className={classes.grid}>
           <Grid item>
             <Paper className={classes.cardStyles}>
@@ -98,9 +100,9 @@ class App extends Component {
           </Grid>
           <Grid item className={classes.explanation}>
             <Meaning meaning={this.state.card.meaning_up} />
-            <Desc desc={this.state.card.desc} />
           </Grid>
         </Grid>
+        <Blurb className={classes.blurb} />
       </Container>
     )
   }
